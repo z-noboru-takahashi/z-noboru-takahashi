@@ -1,0 +1,13 @@
+name: test
+
+on:
+  [push, pull_request]
+jobs:
+  testjob:
+    name: testjob
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: teststep
+        run: sleep 130
+        timeout-minutes: 1
